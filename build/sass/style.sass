@@ -5,3 +5,20 @@ body
 	width: 100vw
 	background: $primary
 	color: $secondary
+	
+
+.wipHeader 
+  @include make-container
+  padding-top: 50px
+  
+.wipRow 
+  @include make-row
+
+
+.wipFooter 
+  background: repeating-linear-gradient( 45deg, #BBF9F6, #BBF9F6 12px, $secondary 12px, $secondary 19px )
+  border-top: 5px solid #F2ACB4
+  height: 35px
+  position: fixed
+  bottom: 0
+  width: 100%

@@ -33,7 +33,7 @@ gulp.task('jade', () => {
 });
 
 gulp.task('sass', () => {
-	return gulp.src(paths.sass + '/style.sass')
+	return gulp.src([paths.sass + '/style.sass', 'node_modules/bootstrap/scss/bootstrap.scss'])
 		.pipe(sass({
 			includePaths: [paths.sass],
 			outputStyle: 'compressed'
